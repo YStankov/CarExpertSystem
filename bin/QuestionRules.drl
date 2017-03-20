@@ -1,0 +1,97 @@
+package com.nbu.carchooser;
+
+import com.nbu.carchooser.Questions.Question;
+import com.nbu.carchooser.Questions.Init;
+import com.nbu.carchooser.QuestionObjects.Carbody;
+import com.nbu.carchooser.QuestionObjects.DoorsNumber;
+import com.nbu.carchooser.QuestionObjects.Engine;
+import com.nbu.carchooser.QuestionObjects.MaxPower;
+import com.nbu.carchooser.QuestionObjects.Price;
+import com.nbu.carchooser.QuestionObjects.ProductionYear;
+import com.nbu.carchooser.QuestionObjects.Transmission;
+import com.nbu.carchooser.QuestionObjects.WheelDrive;
+
+rule "init"
+	when
+	then
+		insert(new Init());
+end
+
+rule "Carbody"
+	when
+		x:Init()
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[0].text,
+			x.questions[0].answers);
+		insert(new Carbody(input));
+end
+
+rule "Engine"
+	when
+		x:Init()
+		exists Carbody(value == 0 || value == 1 || value == 2 || value == 3 || value == 4 || value == 5)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[1].text,
+			x.questions[1].answers);
+		insert(new Engine(input));
+end
+
+rule "Transmission"
+	when
+		x:Init()
+		exists Engine(value == 0 || value == 1 || value == 2 || value == 3)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[2].text,
+			x.questions[2].answers);
+		insert(new Transmission(input));
+end
+
+rule "DoorsNumber"
+	when
+		x:Init()
+		exists Transmission(value == 0 || value == 1 || value == 2)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[3].text,
+			x.questions[3].answers);
+		insert(new DoorsNumber(input));
+end
+
+rule "ProductionYear"
+	when
+		x:Init()
+		exists DoorsNumber(value == 0 || value == 1)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[4].text,
+			x.questions[4].answers);
+		insert(new ProductionYear(input));
+end
+
+rule "MaxPower"
+	when
+		x:Init()
+		exists ProductionYear(value == 0 || value == 1 || value == 2)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[5].text,
+			x.questions[5].answers);
+		insert(new MaxPower(input));
+end
+
+rule "WheelDrive"
+	when
+		x:Init()
+		exists MaxPower(value == 0 || value == 1 || value == 2 || value == 3)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[6].text,
+			x.questions[6].answers);
+		insert(new WheelDrive(input));
+end
+
+rule "Price"
+	when
+		x:Init()
+		exists WheelDrive(value == 0 || value == 1 || value == 2)
+	then
+		int input = MainWindow.instance().getIntAnswer(x.questions[7].text,
+			x.questions[7].answers);
+		insert(new Price(input));
+end

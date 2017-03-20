@@ -1,0 +1,117 @@
+package com.sample;
+
+import com.nbu.carchooser.QuestionObjects.Carbody;
+import com.nbu.carchooser.QuestionObjects.DoorsNumber;
+import com.nbu.carchooser.QuestionObjects.Engine;
+import com.nbu.carchooser.QuestionObjects.MaxPower;
+import com.nbu.carchooser.QuestionObjects.Price;
+import com.nbu.carchooser.QuestionObjects.ProductionYear;
+import com.nbu.carchooser.QuestionObjects.Transmission;
+import com.nbu.carchooser.QuestionObjects.WheelDrive;
+import com.nbu.carchooser.MainWindow;
+
+rule "Audi A4 1.8 T 2007"
+    when
+	    exists Engine(value == 0)
+		exists Carbody(value == 0)
+		exists DoorsNumber(value == 1)
+		exists MaxPower(value == 2)
+		exists ProductionYear(value == 1)
+		exists Transmission(value == 1)
+		exists WheelDrive(value == 0)
+		exists Price(value == 2)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Audi A4 1.8 T 2007", "img/audi-a4.jpg");
+end
+
+rule "Fiat 500C TwinAir 80 Lounge 2015"
+	when
+		exists Engine(value == 0)
+		exists Carbody(value == 1)
+		exists DoorsNumber(value == 0)
+		exists MaxPower(value == 0)
+		exists ProductionYear(value == 2)
+		exists Transmission(value == 2)
+		exists WheelDrive(value == 0)
+		exists Price(value == 2)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Fiat 500C TwinAir 80 Lounge 2015", "img/fiat-500.jpg");
+end
+
+rule "Mercedes E 320 CDI 4Matic Classic 2006"
+	when
+		exists Engine(value == 1)
+		exists Carbody(value == 0)
+		exists DoorsNumber(value == 1)
+		exists MaxPower(value == 2)
+		exists ProductionYear(value == 1)
+		exists Transmission(value == 1)
+		exists WheelDrive(value == 0)
+		exists Price(value == 2)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Mercedes E 320 CDI 4Matic Classic 2006", "img/mercedes-benz-e-class.jpg");
+end
+
+rule "Land Rover Range Rover 3.0 SDV6 Hybrid 2015"
+	when
+		exists Engine(value == 3)
+		exists Carbody(value == 4)
+		exists DoorsNumber(value == 1)
+		exists MaxPower(value == 3)
+		exists ProductionYear(value == 2)
+		exists Transmission(value == 1)
+		exists WheelDrive(value == 2)
+		exists Price(value == 3)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Land Rover Range Rover 3.0 SDV6 Hybrid 2015", "img/land-rover-range-rover.jpg");
+end
+
+rule "Volvo XC90 T6 AWD R-Design 2016"
+	when
+		exists Engine(value == 0)
+		exists Carbody(value == 4)
+		exists DoorsNumber(value == 1)
+		exists MaxPower(value == 3)
+		exists ProductionYear(value == 2)
+		exists Transmission(value == 1)
+		exists WheelDrive(value == 2)
+		exists Price(value == 3)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Volvo XC90 T6 AWD R-Design 2016", "img/volvo-xc90.jpg");
+end
+
+rule "Tesla Model S P90D 2016"
+	when
+		exists Engine(value == 2)
+		exists Carbody(value == 1)
+		exists DoorsNumber(value == 1)
+		exists MaxPower(value == 3)
+		exists ProductionYear(value == 2)
+		exists Transmission(value == 1)
+		exists WheelDrive(value == 2)
+		exists Price(value == 3)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Tesla Model S P90D 2016", "img/tesla-model-s.jpg");
+end
+
+rule "Skoda Octavia 1.8 2003"
+	when
+		exists Engine(value == 0)
+		exists Carbody(value == 1)
+		exists DoorsNumber(value == 1)
+		exists MaxPower(value == 1)
+		exists ProductionYear(value == 1)
+		exists Transmission(value == 0)
+		exists WheelDrive(value == 0)
+		exists Price(value == 1)
+		
+	then
+        MainWindow.instance().showAnswerPanel("Skoda Octavia 1.8 2003", "img/skoda-octavia.jpg");
+end
+
