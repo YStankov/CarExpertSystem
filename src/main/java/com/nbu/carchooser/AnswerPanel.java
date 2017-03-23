@@ -13,8 +13,8 @@ public class AnswerPanel extends JPanel {
         setLayout(gbl);
 
         ImagePanel image = new ImagePanel(imageFileName);
-        image.setMinimumSize(new Dimension(800, 450));
-        image.setPreferredSize(new Dimension(800, 450));
+        image.setMinimumSize(new Dimension(1000, 600));
+        image.setPreferredSize(new Dimension(1000, 600));
         gbc.weighty = 1.0;
         gbc.gridwidth = GridBagConstraints.REMAINDER;
         gbl.setConstraints(image, gbc);

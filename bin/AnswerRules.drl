@@ -115,3 +115,341 @@ rule "Skoda Octavia 1.8 2003"
         MainWindow.instance().showAnswerPanel("Skoda Octavia 1.8 2003", "img/skoda-octavia.jpg");
 end
 
+
+rule "Toyota Land Cruiser 3.0 D-4D Executive 2006"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 2)
+        exists Carbody(value == 4)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 1)
+        exists MaxPower(value == 2)
+
+    then
+        MainWindow.instance().showAnswerPanel("Toyota Land Cruiser 3.0 D-4D Executive 2006","img/ToyotaLand.jpg");
+end
+
+rule "Audi A6 2.0 T FSI 2008"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 2)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 0)
+        exists MaxPower(value == 2)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi A6 2.0 T FSI 2008","img/AudiA62.0.jpg");
+end
+rule "Audi A6 2.0 TDI 2008"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 2)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 1)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi A6 2.0 TDI 2008","img/AudiA62.0.jpg");
+end
+rule "Audi RS6 Avant 5.0 TFSI quattro 2010"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 3)
+        exists Carbody(value == 2)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi RS6 Avant 5.0 TFSI quattro 2010","img/AudiRS6Ava.jpg");
+end
+rule "Audi S6 Avant 4.0 TFSI quattro Pro Line + 2014"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 3)
+        exists Carbody(value == 2)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi S6 Avant 4.0 TFSI quattro Pro Line + 2014","img/AudiS6Avan.jpg");
+end
+rule "Audi A8 2.8 Quattro 1996"
+    when
+        exists ProductionYear(value == 0)
+        exists Price(value == 0)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 0)
+        exists MaxPower(value == 2)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi A8 2.8 Quattro 1996","img/AudiA82.8.jpg");
+end
+rule "Audi S8 4.0 TFSI quattro Plus Pro Line + 2017"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 3)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi S8 4.0 TFSI quattro Plus Pro Line + 2017","img/AudiS84.0.jpg");
+end
+rule "Audi Q3 1.4 TFSI sport Pro Line 2017"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 3)
+        exists Carbody(value == 4)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 0)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi Q3 1.4 TFSI sport Pro Line 2017","img/AudiQ31.4.jpg");
+end
+rule "Audi 80 1.9 TDI 1995"
+    when
+        exists ProductionYear(value == 0)
+        exists Price(value == 0)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 1)
+        exists MaxPower(value == 0)
+
+    then
+        MainWindow.instance().showAnswerPanel("Audi 80 1.9 TDI 1995","img/Audi801.9.jpg");
+end
+rule "Renault Laguna dCi 110 Limited 2015"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 2)
+        exists Carbody(value == 1)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 1)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("Renault Laguna dCi 110 Limited 2015","img/RenaultLagu.jpg");
+end
+rule "BMW Z4 Roadster sDrive30i Executive 2011"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 3)
+        exists Carbody(value == 3)
+        exists DoorsNumber(value == 0)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 1)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("BMW Z4 Roadster sDrive30i Executive 2011","img/BMWZ4Roads.jpg");
+end
+rule "BMW Z4 Roadster sDrive20i 2013"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 2)
+        exists Carbody(value == 3)
+        exists DoorsNumber(value == 0)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 1)
+        exists Engine(value == 0)
+        exists MaxPower(value == 2)
+
+    then
+        MainWindow.instance().showAnswerPanel("BMW Z4 Roadster sDrive20i 2013","img/BMWZ4Roads.jpg");
+end
+rule "BMW X1 sDrive16d Executive 2015"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 2)
+        exists Carbody(value == 4)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 1)
+        exists Engine(value == 1)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("BMW X1 sDrive16d Executive 2015","img/BMWX1sDriv.jpg");
+end
+rule "BMW X6 xDrive50i 2017"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 3)
+        exists Carbody(value == 4)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("BMW X6 xDrive50i 2017","img/BMWX6xDriv.jpg");
+end
+rule "Mercedes S 500 Lang 1995"
+    when
+        exists ProductionYear(value == 0)
+        exists Price(value == 0)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 1)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("Mercedes S 500 Lang 1995","img/MercedesS5.jpg");
+end
+rule "Mercedes S 280 1995"
+    when
+        exists ProductionYear(value == 0)
+        exists Price(value == 0)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 1)
+        exists Engine(value == 0)
+        exists MaxPower(value == 2)
+
+    then
+        MainWindow.instance().showAnswerPanel("Mercedes S 280 1995","img/MercedesS5.jpg");
+end
+rule "Mercedes GL 63 AMG 2015"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 3)
+        exists Carbody(value == 4)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 2)
+        exists Engine(value == 0)
+        exists MaxPower(value == 3)
+
+    then
+        MainWindow.instance().showAnswerPanel("Mercedes GL 63 AMG 2015","img/MercedesGL.jpg");
+end
+rule "Nissan Almera 1.6 GX 1998"
+    when
+        exists ProductionYear(value == 0)
+        exists Price(value == 0)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 0)
+        exists MaxPower(value == 0)
+
+    then
+        MainWindow.instance().showAnswerPanel("Nissan Almera 1.6 GX 1998","img/NissanAlmer.jpg");
+end
+rule "Toyota Picnic 2.0 Executive 2001"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 1)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 0)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("Toyota Picnic 2.0 Executive 2001","img/ToyotaPicni.jpg");
+end
+rule "Kia Pro_Ceed 1.0 T-GDI 120hp GT-Line 2017"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 3)
+        exists Carbody(value == 1)
+        exists DoorsNumber(value == 0)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 0)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("Kia Pro_Ceed 1.0 T-GDI 120hp GT-Line 2017","img/KiaPro_Ceed.jpg");
+end
+rule "Peugeot 207 Look 1.6 HDiF 16V 90hp 2009"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 1)
+        exists Carbody(value == 1)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 1)
+        exists MaxPower(value == 0)
+
+    then
+        MainWindow.instance().showAnswerPanel("Peugeot 207 Look 1.6 HDiF 16V 90hp 2009","img/Peugeot207.jpg");
+end
+rule "Citroen C2 1.4i 16V Start & Stop 2009"
+    when
+        exists ProductionYear(value == 1)
+        exists Price(value == 1)
+        exists Carbody(value == 1)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 2)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 0)
+        exists MaxPower(value == 0)
+
+    then
+        MainWindow.instance().showAnswerPanel("Citroen C2 1.4i 16V Start & Stop 2009","img/CitroenC21.jpg");
+end
+rule "Citroen C5 Tourer HDi 200 Exclusive 2015"
+    when
+        exists ProductionYear(value == 2)
+        exists Price(value == 2)
+        exists Carbody(value == 2)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 1)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 1)
+        exists MaxPower(value == 2)
+
+    then
+        MainWindow.instance().showAnswerPanel("Citroen C5 Tourer HDi 200 Exclusive 2015","img/CitroenC5T.jpg");
+end
+rule "Honda Accord 2.0i TD 1998"
+    when
+        exists ProductionYear(value == 0)
+        exists Price(value == 0)
+        exists Carbody(value == 0)
+        exists DoorsNumber(value == 1)
+        exists Transmission(value == 0)
+        exists WheelDrive(value == 0)
+        exists Engine(value == 1)
+        exists MaxPower(value == 1)
+
+    then
+        MainWindow.instance().showAnswerPanel("Honda Accord 2.0i TD 1998","img/HondaAccord.jpg");
+end
+
+
